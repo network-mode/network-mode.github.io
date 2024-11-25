@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "mode network",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/mode-network_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://network-mode.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://network-mode.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "0ouhobauqd",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Mode Network | Home | Mode App",
+        "meta_descr": "Scaling DeFi to billions of users through onchain agents and AI-powered financial applications. Mode is building the AI agents economy.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/mode-network.png\" alt=\"Mode Network\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uuQoBXSkT0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Mode Network: Transforming the Future of Decentralized Finance</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the ever-evolving landscape of decentralized finance (DeFi), innovative platforms are emerging to address the challenges faced by users and provide unique solutions. One such platform is Mode Network, a project designed to revolutionize the way individuals and businesses interact with financial services in a decentralized manner. By combining the principles of blockchain technology with a focus on user experience, security, and accessibility, Mode Network aims to create a holistic financial ecosystem that empowers users. This blog will explore the features, functionalities, and potential impact of Mode Network on the DeFi landscape.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Mode Network?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Mode Network is a decentralized financial infrastructure that provides a suite of financial services and tools to users. Built on blockchain technology, it offers a range of applications including payment solutions, lending protocols, yield farming, and asset management. The primary goal of Mode Network is to create a seamless and efficient financial experience that caters to both individual users and businesses, enabling them to leverage the benefits of DeFi without the complexities often associated with it.<br><br><b>The Vision Behind Mode Network</b><br>The vision of Mode Network is to democratize access to financial services by creating a user-friendly platform that eliminates barriers to entry. Recognizing that traditional financial systems often exclude large segments of the population, Mode Network aims to provide equitable access to financial tools and resources. By focusing on education, community engagement, and innovation, Mode Network aspires to foster a more inclusive financial ecosystem.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Mode Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Decentralized Payment Solutions</b><br>Mode Network offers decentralized payment solutions that enable users to send and receive cryptocurrencies seamlessly. By leveraging blockchain technology, the platform ensures fast, secure, and low-cost transactions, making it an attractive option for both individuals and businesses. These payment solutions allow users to transact without the need for intermediaries, enhancing security and reducing costs.<br><br><b>2. Lending and Borrowing Protocols</b><br>One of the standout features of Mode Network is its lending and borrowing protocols. Users can lend their assets to earn interest or borrow against their crypto holdings. This functionality empowers users to maximize the utility of their assets, providing liquidity to the market while earning passive income. The platform utilizes smart contracts to automate these processes, ensuring security and transparency.<br><br><b>3. Yield Farming and Staking</b><br>Mode Network incorporates yield farming and staking opportunities, allowing users to earn rewards on their investments. Users can participate in various liquidity pools and earn returns based on their contributions. These features incentivize users to engage with the platform and contribute to its overall liquidity, creating a thriving ecosystem.<br><br><b>4. User-Friendly Interface</b><br>One of the key challenges in the DeFi space is the complexity of user interfaces. Mode Network addresses this issue by providing a user-friendly interface that simplifies navigation and enhances the overall user experience. The platform is designed to be intuitive, making it accessible to users of all experience levels.<br><br><b>5. Cross-Chain Compatibility</b><br>Understanding the importance of interoperability in the blockchain ecosystem, Mode Network aims to support cross-chain functionality. This feature allows users to seamlessly transact and interact with assets from different blockchain networks, expanding the range of available options and enhancing flexibility.<br><br><b>6. Security and Compliance</b><br>Mode Network prioritizes security and compliance in its operations. The platform employs advanced security protocols to protect user data and assets, ensuring a safe environment for transactions. Additionally, Mode Network aims to comply with regulatory standards, fostering trust and credibility within the DeFi space.<br><br><b>7. Community Engagement and Governance</b><br>Community involvement is a cornerstone of Mode Network's philosophy. The platform incorporates governance mechanisms that allow users to participate in decision-making processes. This democratic approach empowers users to shape the future of the platform and ensures that their voices are heard.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Problems Mode Network Aims to Solve</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Accessibility of Financial Services</b><br>Traditional financial systems often exclude individuals who lack access to banking services or face high barriers to entry. Mode Network aims to democratize access to financial tools by providing a platform that is open to everyone, regardless of their background or financial status.<br><br><b>2. Complexity of DeFi Platforms</b><br>Many DeFi platforms can be overwhelming for new users, with complex interfaces and intricate processes. Mode Network addresses this challenge by offering a user-friendly interface that simplifies navigation and enhances the overall experience for users.<br><br><b>3. Lack of Security and Trust</b><br>Security concerns are prevalent in the DeFi space, with users often worried about the safety of their assets. Mode Network prioritizes security through advanced protocols and compliance measures, fostering trust among users.<br><br><b>4. Limited Interoperability</b><br>As the blockchain ecosystem expands, the need for cross-chain compatibility becomes increasingly important. Mode Network addresses this issue by supporting cross-chain transactions, allowing users to interact with a broader range of assets and services.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Mode Network Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. User Registration and Wallet Integration</b><br>Getting started with Mode Network is straightforward. Users can register on the platform and integrate their wallets to begin interacting with the various features and services. This wallet connection allows users to retain full control over their assets while leveraging the platform's functionalities.<br><br><b>2. Utilizing Payment Solutions</b><br>Once registered, users can access the decentralized payment solutions offered by Mode Network. They can send and receive cryptocurrencies quickly and securely, making transactions convenient and cost-effective.<br><br><b>3. Engaging in Lending and Borrowing</b><br>Users can participate in the lending and borrowing protocols by depositing their assets into the platform. By lending, users can earn interest on their holdings, while borrowers can access liquidity against their crypto assets. Smart contracts automate these processes, ensuring transparency and security.<br><br><b>4. Participating in Yield Farming and Staking</b><br>Mode Network's yield farming and staking opportunities allow users to earn rewards on their investments. Users can choose from various liquidity pools to contribute their assets and earn returns based on their participation. This incentivizes active engagement with the platform.<br><br><b>5. Cross-Chain Transactions</b><br>Mode Network's cross-chain compatibility enables users to transact and interact with assets from different blockchain networks. This feature expands the range of available options and enhances flexibility for users.<br><br><b>6. Community Governance</b><br>Mode Network empowers its users through governance mechanisms that allow them to participate in decision-making processes. Users can propose and vote on changes to the platform, fostering a sense of ownership and community involvement.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of Using Mode Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhanced Accessibility</b><br>By providing a user-friendly platform and decentralized financial tools, Mode Network enhances accessibility to financial services for all individuals. This democratization of finance empowers users to take control of their financial futures.<br><br><b>2. Security and Trust</b><br>Mode Network prioritizes security and compliance, ensuring that users can transact with confidence. The platform's commitment to protecting user data and assets fosters trust among its community.<br><br><b>3. Diverse Financial Opportunities</b><br>With features such as lending, borrowing, yield farming, and staking, Mode Network offers users a diverse range of financial opportunities. This variety allows users to maximize the utility of their assets and generate passive income.<br><br><b>4. Community-Centric Approach</b><br>Mode Network's focus on community engagement and governance ensures that users have a voice in shaping the platform's future. This democratic approach fosters a strong sense of community and collaboration.<br><br><b>5. Cross-Chain Functionality</b><br>The ability to interact with assets from different blockchain networks enhances user flexibility and expands trading opportunities. This cross-chain compatibility positions Mode Network as a versatile player in the DeFi space.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Mode Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Features and Services</b><br>As the DeFi landscape continues to evolve, Mode Network is likely to expand its offerings to include new features and services. This may involve introducing additional financial products, enhancing existing functionalities, and exploring partnerships with other projects.<br><br><b>2. Continued Focus on User Experience</b><br>Mode Network will likely continue prioritizing user experience by refining its interface and enhancing the overall platform. User feedback and community input will play a crucial role in shaping future developments.<br><br><b>3. Community Governance Enhancements</b><br>Mode Network may explore ways to enhance its governance mechanisms, allowing users to have even more influence over decision-making processes. This could involve introducing new voting systems or expanding the scope of governance proposals.<br><br><b>4. Embracing New Technologies</b><br>To stay competitive in the rapidly changing DeFi landscape, Mode Network may explore the adoption of emerging technologies, such as artificial intelligence and advanced analytics. These innovations can improve user experience and expand the platform's capabilities.<br><br><b>5. Building Strategic Partnerships</b><br>Mode Network may pursue partnerships with other projects and platforms in the DeFi ecosystem. Collaborations can provide users with additional resources, enhance liquidity, and expand the range of services available on the platform.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Volatility</b><br>The DeFi space is characterized by significant market volatility, which can impact trading strategies and investment outcomes. Users must be aware of the risks associated with trading in a fluctuating environment.<br><br><b>2. Regulatory Landscape</b><br>As DeFi matures, it may face increasing regulatory scrutiny. Mode Network must navigate potential regulatory challenges to ensure compliance and maintain user trust.<br><br><b>3. Competition in the DeFi Space</b><br>The DeFi market is highly competitive, with numerous platforms offering similar services. Mode Network must continually innovate and differentiate itself to attract and retain users.<br><br><b>4. Security Risks</b><br>Despite prioritizing security, the DeFi space is not immune to vulnerabilities. Mode Network must remain vigilant in its security practices to protect user data and assets from potential threats.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Mode Network represents a significant advancement in the decentralized finance landscape, offering a comprehensive platform that empowers users with a range of financial tools and services. By prioritizing accessibility, security, and community engagement, Mode Network aims to create an inclusive financial ecosystem that caters to individuals and businesses alike.<br><br>As the platform continues to evolve and expand its offerings, it has the potential to become a leading player in the DeFi space. By democratizing access to financial services and fostering a sense of community, Mode Network embodies the principles of decentralization and innovation that define the future of finance.<br><br>For individuals seeking to navigate the complexities of decentralized finance, Mode Network offers a promising avenue to explore. With its commitment to user experience, education, and community involvement, the platform is well-positioned to thrive in the dynamic world of DeFi. Whether you are a novice trader or a seasoned investor, Mode Network provides the tools and resources needed to succeed in the evolving landscape of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uuQoDrM0Hl",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
